@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>realsxlxy</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;400;600;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="intro-overlay" id="introOverlay">
+        <div class="intro-content">
+            <h1>MADE BY COLLECTIVE</h1>
+            <button class="intro-arrow" id="introArrow" aria-label="Giriş Yap">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <p>Sayfama hoşgeldin<br>giriş yapmak için tıkla</p>
+        </div>
+    </div>
+
+    <!-- Arka Plan Animasyonu -->
+    <div class="blob-container">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+
+    <nav>
+        <div class="logo">realsxlxy<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="reveal">Merhaba, Ben</h2>
+                <h1 class="reveal">realsxlxy</h1>
+                <p class="reveal">Modern, hızlı ve kullanıcı dostu dijital deneyimler tasarlıyorum.</p>
+                <div class="hero-btns reveal">
+                    <a href="#about" class="btn btn-primary">Beni Tanı</a>
+                    <a href="#contact" class="btn btn-secondary">İş Birliği</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discord & About Section -->
+        <section id="about" class="about-discord">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Dijital Varlığım</h2>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Discord Card (Mevcut) -->
+                    <div class="discord-card reveal" id="discord">
+                        <div class="card-header">
+                            <i class="fab fa-discord"></i>
+                            <span>Canlı Discord Profilleri</span>
+                        </div>
+                        <div id="discord-profile">
+                            <div class="skeleton-loader"></div>
+                        </div>
+                    </div>
+
+                    <!-- Ziyaretçi Sistemi -->
+                    <div class="stats-card reveal" id="stats">
+                        <div class="card-header">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>Site İstatistikleri</span>
+                        </div>
+                        <div class="stats-content">
+                            <div class="stat global">
+                                <div class="stat-icon"><i class="fa-solid fa-eye"></i></div>
+                                <div class="stat-info">
+                                    <div class="stat-label">Toplam Ziyaret</div>
+                                    <div class="stat-value" id="globalVisitCount">—</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="stat me">
+                                <div class="stat-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+                                <div class="stat-info">
+                                    <div class="stat-label">Senin Ziyaretin</div>
+                                    <div class="stat-value" id="userVisitCount">—</div>
+                                    <div class="level-row">
+                                        <span class="level-badge" id="userLevelBadge">Seviye</span>
+                                        <span class="level-name" id="userLevelName">—</span>
+                                    </div>
+                                    <div class="progress-wrap">
+                                        <div class="progress-bar" id="levelProgressBar"></div>
+                                    </div>
+                                    <div class="progress-text" id="progressText">—</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sosyal Medya Kartları -->
+                    <div class="social-grid">
+                        <a href="https://discord.com/users/908743424717496320" target="_blank"
+                            class="social-item discord reveal">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord</span>
+                        </a>
+                        <a href="https://www.youtube.com/@Sxlxy29" target="_blank" class="social-item youtube reveal">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="https://open.spotify.com/user/31rlg42c3bqt4xw2mxpd7bwulfea" target="_blank"
+                            class="social-item spotify reveal">
+                            <i class="fab fa-spotify"></i>
+                            <span>Spotify</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@sxlxy1" target="_blank" class="social-item tiktok reveal">
+                            <i class="fab fa-tiktok"></i>
+                            <span>TikTok</span>
+                        </a>
+                        <a href="https://github.com/realsxlxy" target="_blank" class="social-item github reveal">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+
+                    <!-- Hakkımda Özeti (Mevcut) -->
+                    <div class="about-card reveal">
+                        <h3>Hakkımda</h3>
+                        <p>Teknolojiye meraklı, sürekli öğrenen ve yenilikçi çözümler üretmeyi seven bir geliştiriciyim.
+                            Kod yazmak benim için sadece bir iş değil, aynı zamanda bir sanat.</p>
+                        <div class="skills">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Bot Developer</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <p class="section-subtitle">// Projeler</p>
+                        <h2>Öne Çıkan Projeler</h2>
+                        <p>Temiz, verimli ve kullanıcı odaklı dijital ürünler geliştirme tutkum yansıtan çalışmalarım.</p>
+                    </div>
+                    <a href="https://github.com/realsxlxy" target="_blank" class="btn btn-secondary">Tüm Projeleri Gör</a>
+                </div>
+                <div class="project-grid">
+                    <div class="project-card reveal">
+                        <div class="project-card-top">
+                            <div class="project-icon"><i class="fab fa-github"></i></div>
+                            <a href="https://github.com/realsxlxy/collective-sablon-cloner" target="_blank" class="project-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <h3>collective-sablon-cloner</h3>
+                        <p>Kendim sıfırdan yaptığım şablon cloner uygulaması. İzinsiz çalıp yayan olursa hakkında hukuki işlemler başlatılacaktır bilginize.</p>
+                        <div class="project-meta">
+                            <span>HTML</span>
+                            <span>Stars: 1</span>
+                        </div>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-card-top">
+                            <div class="project-icon"><i class="fab fa-github"></i></div>
+                            <a href="https://github.com/realsxlxy/Pegra-kisiselweb" target="_blank" class="project-link"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <h3>Pegra-kisiselweb</h3>
+                        <p>Kendim sıfırdan yaptığım kişisel web sitem. İzinsiz çalıp yayan olursa hakkında hukuki işlemler başlatılacaktır bilginize.</p>
+                        <div class="project-meta">
+                            <span>JavaScript</span>
+                            <span>Stars: 1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Repositories -->
+        <section id="repos" class="github-showcase reveal">
+            <div class="github-header">
+                <div>
+                    <p class="section-subtitle">// Açık Kaynak</p>
+                    <h3>GitHub realsxlxy</h3>
+                    <p>Açık kaynak katkıları ve kişisel projeler.</p>
+                </div>
+                <a href="https://github.com/realsxlxy" target="_blank" class="github-profile-link">Tüm Repolar →</a>
+            </div>
+            <div class="repo-grid">
+                <a href="https://github.com/realsxlxy/kisisel-kendi-websitem" target="_blank" class="repo-item reveal">
+                    <div class="repo-top"><i class="fas fa-folder"></i></div>
+                    <h4>kisisel-kendi-websitem</h4>
+                    <p class="repo-description">Kişisel web sitem için oluşturduğum şık ve modern arayüz.</p>
+                    <div class="repo-meta">
+                        <span>HTML</span>
+                        <span>0 ★</span>
+                    </div>
+                </a>
+                <a href="https://github.com/realsxlxy/ThePasha2015" target="_blank" class="repo-item reveal">
+                    <div class="repo-top"><i class="fas fa-folder"></i></div>
+                    <h4>ThePasha2015</h4>
+                    <p class="repo-description">Geçmiş projelerim ve deneyimlerimi barındıran bir depo.</p>
+                    <div class="repo-meta">
+                        <span>N/A</span>
+                        <span>0 ★</span>
+                    </div>
+                </a>
+                <a href="https://github.com/realsxlxy/Pedox-Ticket-V14" target="_blank" class="repo-item reveal">
+                    <div class="repo-top"><i class="fas fa-folder"></i></div>
+                    <h4>Pedox-Ticket-V14</h4>
+                    <p class="repo-description">Bilet sistemi projeleri için geliştirdiğim modern JavaScript çözümü.</p>
+                    <div class="repo-meta">
+                        <span>JavaScript</span>
+                        <span>1 ★</span>
+                    </div>
+                </a>
+                <a href="https://github.com/realsxlxy/Dogumgunu-Kizi" target="_blank" class="repo-item reveal">
+                    <div class="repo-top"><i class="fas fa-folder"></i></div>
+                    <h4>Dogumgunu-Kizi</h4>
+                    <p class="repo-description">Kutlama temalı HTML projesi, minimal ve hızlı bir deneyim sunar.</p>
+                    <div class="repo-meta">
+                        <span>HTML</span>
+                        <span>1 ★</span>
+                    </div>
+                </a>
+                <a href="https://github.com/realsxlxy/illegalizm-webhook-sender" target="_blank" class="repo-item reveal">
+                    <div class="repo-top"><i class="fas fa-folder"></i></div>
+                    <h4>illegalizm-webhook-sender</h4>
+                    <p class="repo-description">Webhook gönderme araçları ve otomasyon projeleri için basit bir depo.</p>
+                    <div class="repo-meta">
+                        <span>HTML</span>
+                        <span>1 ★</span>
+                    </div>
+                </a>
+                <a href="https://github.com/realsxlxy/img-logger" target="_blank" class="repo-item reveal">
+                    <div class="repo-top"><i class="fas fa-folder"></i></div>
+                    <h4>img-logger</h4>
+                    <p class="repo-description">Görsel loglama ve medya yönetimi için Python tabanlı bir araç.</p>
+                    <div class="repo-meta">
+                        <span>Python</span>
+                        <span>1 ★</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section id="journey" class="timeline-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <p class="section-subtitle">// Serüven</p>
+                        <h2>Deneyim & Yolculuk</h2>
+                        <p>Yazılım dünyasındaki gelişim sürecim ve projelerim.</p>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <span class="timeline-marker"></span>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2026 - Günümüz</span>
+                            <h3>Full-Stack Freelancer</h3>
+                            <p>Özel web uygulamaları geliştirme, API entegrasyonları ve modern UI tasarımları.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <span class="timeline-marker"></span>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2016</span>
+                            <h3>Open Source Katılımcısı</h3>
+                            <p>Discord botları ve topluluk araçları üzerine çeşitli GitHub projelerine katkı başlattım.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack -->
+        <section id="stack" class="stack-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <p class="section-subtitle">// Yetenekler</p>
+                        <h2>Teknoloji Stack'im</h2>
+                        <p>Modern web ve yazılım dünyasında kullandığım araçlar.</p>
+                    </div>
+                </div>
+                <div class="stack-grid">
+                    <div class="stack-card reveal">
+                        <div class="stack-icon">⚡</div>
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript, React, Next.js, Tailwind CSS</p>
+                    </div>
+                    <div class="stack-card reveal">
+                        <div class="stack-icon">⚙️</div>
+                        <h3>Backend</h3>
+                        <p>Node.js, Express, Python, MongoDB, PostgreSQL</p>
+                    </div>
+                    <div class="stack-card reveal">
+                        <div class="stack-icon">🛠️</div>
+                        <h3>Araçlar</h3>
+                        <p>Git, Docker, VS Code, Figma, Postman</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <p class="section-subtitle">// Programlama</p>
+                        <h2>Bildiğim Diller</h2>
+                        <p>Geliştirdiğim projelerde kullandığım programlama dilleri ve teknolojiler.</p>
+                    </div>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card reveal"><div class="tech-icon">Py</div><span>Python</span></div>
+                    <div class="tech-card reveal"><div class="tech-icon">JS</div><span>JavaScript</span></div>
+                    <div class="tech-card reveal"><div class="tech-icon">Node</div><span>Node.js</span></div>
+                    <div class="tech-card reveal"><div class="tech-icon">Lua</div><span>Lua</span></div>
+                    <div class="tech-card reveal"><div class="tech-icon">HTML</div><span>HTML5</span></div>
+                    <div class="tech-card reveal"><div class="tech-icon">CSS</div><span>CSS3</span></div>
+                    <div class="tech-card reveal"><div class="tech-icon">C#</div><span>C#</span></div>
+                    <div class="tech-card reveal"><div class="tech-icon">C</div><span>C</span></div>
+                    <div class="tech-card reveal"><div class="tech-icon">C++</div><span>C++</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="floating-visit" id="floatingVisit">
+        <i class="fa-solid fa-eye"></i>
+        <span id="floatingVisitCount">—</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
